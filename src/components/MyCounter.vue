@@ -3,8 +3,8 @@
     <h3>MyCounter component</h3>
     Reactive variable count: <b>{{ count }}</b>
     <p>
-      <button @click="count++">Increment</button>
-      <button @click="count--">Decrement</button>
+      <button @click="increment()">Increment</button>
+      <button @click="decrement()">Decrement</button>
     </p>
   </div>
 </template>
@@ -12,6 +12,14 @@
 import { ref } from 'vue';
 
 const count = ref(0);
+
+function increment() {
+  count.value++;
+}
+
+function decrement() {
+  count.value--;
+}
 </script>
 <style scoped>
 p {
