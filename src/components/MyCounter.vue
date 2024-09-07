@@ -1,12 +1,25 @@
 <template>
-  <h1>MyCounter {{ message }}</h1>
+  <div>
+    <h3>MyCounter component</h3>
+    Reactive variable count: <b>{{ count }}</b>
+    <p>
+      <button @click="count++">Increment</button>
+      <button @click="count--">Decrement</button>
+    </p>
+  </div>
 </template>
-<script>
-export default {
-  name: 'MyCounter',
-  props: {
-    message: String,
-  },
-};
+<script setup>
+import { ref } from 'vue';
+
+const count = ref(0);
 </script>
-<style scoped></style>
+<style scoped>
+p {
+  font-family: papyrus;
+  font-size: 20px;
+}
+
+.red-text {
+  color: red;
+}
+</style>

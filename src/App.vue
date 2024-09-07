@@ -1,8 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="NadetDev Vue.js App" />
   <HomeComponent msg="NadetDev Vue.js Primer App" />
-  <HomeCounter message="by NadetDev" />
+  <HomeCounter />
 </template>
 
 <script setup>
