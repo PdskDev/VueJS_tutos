@@ -1,15 +1,19 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="NadetDev Vue.js App" />
+  <HomeComponent msg="NadetDev Vue.js Primer App" />
+  <HomeCounter message="by NadetDev" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import HomeComponent from './components/HomeComponent.vue';
+import MyCounter from './components/MyCounter';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    HomeComponent,
+    HomeCounter: MyCounter,
   },
 };
 </script>
