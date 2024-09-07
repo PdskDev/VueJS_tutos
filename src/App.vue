@@ -5,17 +5,9 @@
   <HomeCounter message="by NadetDev" />
 </template>
 
-<script>
+<script setup>
 import HomeComponent from './components/HomeComponent.vue';
-import MyCounter from './components/MyCounter';
-
-export default {
-  name: 'App',
-  components: {
-    HomeComponent,
-    HomeCounter: MyCounter,
-  },
-};
+import HomeCounter from './components/MyCounter';
 </script>
 
 <style>
